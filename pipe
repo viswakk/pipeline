@@ -1,0 +1,23 @@
+def workspace
+nede {
+    stage ('checkout')
+    {
+        checkout
+    }
+    stage ('static code analysis')
+    {
+        echo "static code analysis"
+    }
+    stage ('build')
+    {
+        echo "bulid the code"
+    }
+    stage ('unit testing')
+    {
+        echo "unit testing"
+    }
+    stage ('delivery')
+    {
+        echo "delivery the code"
+    }
+}
